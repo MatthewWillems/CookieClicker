@@ -1,0 +1,20 @@
+body{
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #B7CADB,#54BAB9);
+    font-family: 'Inter', sans-serif;
+    padding: 4rem;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.buttonAndAvatarWrapper{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}

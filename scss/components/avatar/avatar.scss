@@ -1,0 +1,33 @@
+.avatar {
+    width: 10rem;
+    height: 10rem;
+    background: whitesmoke;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 0.3rem solid black;
+
+    &__head {
+        width: 40%;
+        height: 40%;
+        background: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__body {
+        width: 70%;
+        height: 50%;
+        background: black;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 100%;
+    }
+
+}

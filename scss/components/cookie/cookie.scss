@@ -1,0 +1,69 @@
+@use "../../abstracts/colors.scss";
+
+.cookie {
+    width: 40rem;
+    aspect-ratio: 1/1;
+    background: map-get(colors.$cookie, "background");
+    border-radius: 49%;
+    box-shadow:
+        inset 0 0 6rem 0 map-get(colors.$cookie, "spots"),
+        0 1rem 1rem 0 map-get(colors.$cookie, "spots");
+    position: relative;
+    overflow: hidden;
+    border: 0.0rem solid #3C2A21;
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:active{
+        transform: scale(0.90);
+    }
+    &__spots {
+        width: 7rem;
+        aspect-ratio: 1/1;
+        background: map-get(colors.$cookie, "spots");
+        border-radius: 47%;
+        position: absolute;
+
+        &--first {
+            top: 10%;
+            left: 5%;
+        }
+
+        &--second {
+            right: 10%;
+            top: 5%;
+        }
+
+        &--third {
+            right: 5%;
+            bottom: 10%;
+
+        }
+
+        &--fourth {
+            left: 5%;
+            bottom: 12%;
+        }
+
+        &--fifth {
+            left: 25%;
+            bottom: 35%;
+        }
+
+        &--sixth {
+            left: 25%;
+            bottom: 70%;
+        }
+
+        &--seventh {
+            left: 65%;
+            bottom: 40%;
+        }
+
+        &--eight {
+            left: 40%;
+            bottom: 15%;
+        }
+    }
+}
